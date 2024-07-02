@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Clamp Calculator</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Clamp<br />計算ジェネレーター</h1>
+      <form id="clampForm">
+        <h2>VALUES</h2>
+        <label for="minValue">最小値 (px):</label>
+        <input
+          type="number"
+          id="minValue"
+          name="minValue"
+          step="0.01"
+          required
+        />
+
+        <label for="maxValue">最大値 (px):</label>
+        <input
+          type="number"
+          id="maxValue"
+          name="maxValue"
+          step="0.01"
+          required
+        />
+
+        <h2>VIEWPORT</h2>
+        <label for="minViewport">最小ビューポート幅 (px):</label>
+        <input type="number" id="minViewport" name="minViewport" required />
+
+        <label for="maxViewport">最大ビューポート幅 (px):</label>
+        <input type="number" id="maxViewport" name="maxViewport" required />
+
+        <button type="submit">計算</button>
+      </form>
+      <div id="result"></div>
+      <div class="copy-button-wrapper">
+        <button id="copyButton">
+          クリップボードにコピー<span class="material-icons-outlined"
+            >content_paste</span
+          >
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Rampart+One&display=swap');
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f4f4f9;
+  overflow: auto; /* ここを変更しました */
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  height: auto;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: 'Rampart One', sans-serif;
+  font-size: clamp(1.5rem, 1.1818rem + 1.59vw, 2.375rem);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.0227rem + 1.13vw, 1.875rem);
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333333;
+  border-radius: 0px;
+  width: clamp(12.5rem, 10.227rem + 11.36vw, 18.75rem);
+  height: 40px;
+  font-weight: bold;
+  border: 2px solid #333333;
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgba(51, 51, 51, 1);
+  background-color: #ffffff;
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: clamp(0.75rem, 0.614rem + 0.68vw, 1.125rem);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.copy-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
